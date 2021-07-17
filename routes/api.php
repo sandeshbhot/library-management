@@ -26,11 +26,20 @@ Route::group(['middleware' => 'auth:api'], function(){
 
 	Route::get('logout', 'API\UserController@logout');
     Route::post('updateprofile', 'API\UserController@updateprofile');
+
+    //Book 
     Route::get('book-list', 'API\BookController@index');
     Route::post('create-book', 'API\BookController@store');
     Route::post('get-single-book/{id}', 'API\BookController@show');
     Route::post('updatebook/{id}', 'API\BookController@update');
-    Route::post('deletebook/{id}', 'API\BookController@update');
+    Route::post('deletebook/{id}', 'API\BookController@delete');
+
+     //Book Issue
+    Route::get('book_issue_log-list', 'API\Book_issue_logController@index');
+    Route::post('create-book_issue_log', 'API\Book_issue_logController@store');
+    Route::post('get-single-book_issue_log/{id}', 'API\Book_issue_logController@show');
+    Route::post('updatebook_issue_log/{id}', 'API\Book_issue_logController@update');
+    Route::post('deletebook_issue_log/{id}', 'API\Book_issue_logController@delete');
 	//Route::post('/lessoncontentedit/{id}', 'API\CourseController@lessoncontentedit'); 
 	//Route::get('/lessoncontentdelete/{id}', 'API\CourseController@lessoncontentdelete'); 
 
