@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "15446226-2145-4fcb-8522-95249ec4e896",
+		"name": "library-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "sandesh.bhot88@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/library-management/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/library-management/api/registeration?firstname=Sandesh&lastname=Bhot&email=sandesh.bhot88@gmail.com&password=123456&c_password=123456&mobile=7588300050&age=33&gender=m&city=Mumbai",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"registeration"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Sandesh"
+						},
+						{
+							"key": "lastname",
+							"value": "Bhot"
+						},
+						{
+							"key": "email",
+							"value": "sandesh.bhot88@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						},
+						{
+							"key": "c_password",
+							"value": "123456"
+						},
+						{
+							"key": "mobile",
+							"value": "7588300050"
+						},
+						{
+							"key": "age",
+							"value": "33"
+						},
+						{
+							"key": "gender",
+							"value": "m"
+						},
+						{
+							"key": "city",
+							"value": "Mumbai"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "Sandesh",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sandesh.bhot88@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/library-management/api/updateprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"updateprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/library-management/api/book-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"book-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_name",
+							"value": "History",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Sandesh",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test2",
+							"type": "text"
+						},
+						{
+							"key": "cover_image",
+							"type": "file",
+							"src": "/C:/Users/SANDESH/Desktop/gettyimages-157482029-612x612.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/library-management/api/create-book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"create-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-single-book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "i",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/library-management/api/get-single-book/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"get-single-book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_name",
+							"value": "GK",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "testing",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Ashwini",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/library-management/api/updatebook/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"updatebook",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/library-management/api/deletebook/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"deletebook",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book Log",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_issue_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "student_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "issue_by",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "issued_at",
+							"value": "11-06-2021",
+							"type": "text"
+						},
+						{
+							"key": "return_time",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/library-management/api/create-book-issue-log",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"create-book-issue-log"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-single-book-issue-log",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/library-management/api/get-single-book-issue-log/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"get-single-book-issue-log",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatebook-issue-log",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/library-management/api/updatebook-issue-log/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"updatebook-issue-log",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showuserwisebook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjU0ODQyZmQ1OGNlMjM5NTgyNWFhNmFlMTQ3ZDFkZGUyMDRkNGVhZTNkYTc4YWNlNGZlMjgzYjBlMDQ2OTM5NzE5OTQ3MjU5ZDk1OWU0ZTIiLCJpYXQiOjE2MjY0NTc0MjAsIm5iZiI6MTYyNjQ1NzQyMCwiZXhwIjoxNjU3OTkzNDIwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KlEEJ3xX18vCOgvE4m1fHTAnyNWseF-3vuqJhd1KoTQ06Pp1hlINS7J3YrZ7OLZjr381k63TYGhyQJayoUlR8SpbqxQa1hungU1SrniIOEcmyRXLdj18XM3SDDwoHGZ9uDuX35j6jCs_CtUVXYVOzTnw62-LVZZcVIkKZjDQNCxc6HXKb3Qq5cSMUIUbnoka-p5FfFFC_XQ9R2EUcMkdpeBEY2ILIMul9uDZQzK1wqiGkob_KLJwHh_bWzsNUpCGnJrCBvX8f74d6qIH58A08z2a4o2eX6WY6PNxog0XVy75FBdwZg4NtSBAI7rpBNxwehrvPvLZaTf6ctdnPlG_JWctE9odF6vM-Es43UK7aOqF99JxPlPA748_QbGNct3mp1NBprw9Yi505aSHbiDPZriphYOx2F2SI8dopiS5UZWatGkDWKUATYSG6C46kOAV9_3BRcyIcQiptzstue-ARYGkYyb6Eden-QN6SDKuy-kEs63y6bCEgnb33Dn8hmWWVdvdNBTdrDhzk5M7uiBlMCTao5ISW9Pz4wjQM2M5WCUfm0OeYYIm9t7JjyHSKgzqz0Ce2T1e-BzWWjF0iB1MltTp9NjiogQ_U_srrkKZnj5O20HWMtRLtd51emX6j8X32GMi5QSZDZU_KG2z6LsNlw4mSMawBUw2azTqXANxNh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/library-management/api/showuserwisebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"library-management",
+						"api",
+						"showuserwisebook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
