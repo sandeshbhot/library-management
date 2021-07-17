@@ -53,7 +53,7 @@ class BookController extends BaseController
              $book->save();
              $bookid = $book->id;
 
-           return $this->sendResponse($bookid->toArray(), 'Book created successfully.');
+           return $this->sendResponse($book->toArray(), 'Book created successfully.');
     }
 
     public function show($id)
@@ -78,8 +78,8 @@ class BookController extends BaseController
         $validator = Validator::make($input, [
             'book_name' => 'required',
             'author' => 'required',
-            'description' => 'required',
-            'cover_image' => 'required',
+            // 'description' => 'required',
+            // 'cover_image' => 'required',
         ]);
 
 
@@ -104,12 +104,13 @@ class BookController extends BaseController
              $bookid = $book->id;
 
 
-        return $this->sendResponse($bookid->toArray(), 'Book updated successfully.');
+        return $this->sendResponse($book->toArray(), 'Book updated successfully.');
     }
 
 
-    public function destroy(Book $book)
-    {
+    public function destroy(Book $book, $id)
+    { 
+        $book = Book::find($id);
         $book->delete();
         $response = "Success";
 
